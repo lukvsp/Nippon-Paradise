@@ -1,0 +1,189 @@
+/* Todas as Páginas */
+
+.content-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Cor preta semi-transparente */
+    padding: 20px; /* Adicione espaço interno para o conteúdo */
+    color: #fff;
+}
+
+.content {
+    font-family: Arial;
+    color: #fff;
+    font-size: 14px;
+}
+
+    /* Cabeçalho */
+    
+    .header {
+        font-family: Millenia;/* Nome da Fonte */
+        background-color: #220404;/* Cor do Fundo */
+        color: #fff;/* Cor da letra */
+        width: 100%;/* Largura do fundo */
+        padding: 0px;/* Altura do fundo */
+        position: fixed;/* Posição do fundo arrumada */
+        top: 0;
+        left: 0;/* Alinha o fundo */
+        display: flex;/* Junta a logo com as páginas da header */
+        justify-content: space-between; /* Justifica o espaço entre a logo a as páginas */
+        align-items: center; /* centraliza verticalmente as paginas */
+    }
+
+    header nav ul {
+        list-style-type: none; /* Deixa as paginas sem detalhes padrao */
+        display: flex;/* Deixa as paginas listadas horizontalmente */
+    }
+    
+    header nav ul li {
+        margin-right: 20px;/* Alinha as paginas para a direita */
+        margin-top: 12px;/* Alinha as paginas para o centro */
+    }
+    
+    header nav ul li a {
+        color: #fff;/* Cor da fonte */
+        text-decoration: none; /* Deixa as paginas sem detalhes padrao */
+        font-size: 18px;/* Tamanho da fonte */
+    }
+
+    .logo {
+        width: 15%; /* Tamanho da logo */
+        max-width: 150px; /* Tamanho máximo da logo */
+        height: auto; /* Mantém a proporção da logo */
+    }
+    
+    .logo img {
+        width: 70%; /* Faz a imagem ocupar todo o espaço disponível */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .textos { 
+        font-family: "Monocraft"; /* Nome da Fonte */
+        color: blue; /* Cor das letras ao passar com o mouse */
+    }
+    /* Fim do Cabeçalho */
+
+    /* Rodapé */
+    .footer {
+        text-align: center; /* Centraliza o texto */
+        background-color: #666565;/* Cor do Fundo */
+        color: #fff;/* Cor das letras */
+        width: 100%;/* Largura do fundo */
+        font-size: 18px;/* Tamanho das letras */
+    }
+
+    .copyright {
+        background-color: #000; /* Cor do Fundo */
+        padding: 6px 0; /* Espaço vertical do fundo */
+        font-size: 14px; /* Tamanho das letras */
+    }
+    /* Fim do Rodapé */
+
+    /* Interação com Sobre e Menu */
+    .atencao { /* Textos de Aviso*/
+        text-align: center; /* Centraliza */
+        color: orange; /* Cor da Letra */
+    }
+    /* Fim da Interação com Sobre e Menu */
+
+/* Página Home */
+
+
+.carousel {
+    width: 100%;/*tamanho da imagem*/
+    max-height: 500px; /* Altura máxima */
+    overflow: hidden;/* faz com que a imagem não preencha a pagina toda */
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Faz com que a imagem cubra o container */
+}
+
+/* Ajuste para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    .carousel {
+        max-height: 300px; /* Ajusta a altura máxima para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        width: auto; /* Ajusta para telas muito pequenas */
+        height: 100%;
+        object-fit: contain; /* Mantém a imagem visível sem cortar */
+    }
+}
+
+/* Fim da Página Home */
+
+/* Página de Menu */
+
+.menu-categorias {
+    text-align: center;/* Centraliza os botões */
+}
+
+.menu-categorias button { /* Se aplica aos botões */
+    background-color: gray; /* Cor do fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;/* Retira a borda branca do botão */
+    padding: 35px 50px;/* Aumenta o espaço interno dos botões */
+    margin: 30px;/* Aumenta a distância de um botão para o outro */
+    border-radius: 5px;/* Deixa a borda do botao redondo */
+    font-size: 20px;/* Tamanho da letra do botão */
+}
+
+.menu-categorias button:hover { /* Se ativa ao passar o mouse em cima do botão */
+    background-color: #666; /* Muda a cor de fundo */
+}
+
+.prato { /* Se refere ao card dos pratos */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    background-color: gray;/* Cor do fundo */
+    font-family: "Monocraft"/* Nome da fonte */
+}
+
+/* Fim da Página de Menu */
+
+/* Página de Sobre */
+
+.info-secao {
+    display: flex;/* Transforma as box em quadrados */
+    gap: 20px; /* Espaçamento entre os quadrados */
+    margin-top: 30px;/* Distancia os quadrados do topo */
+}
+
+.info-box {
+    background-color: #4e4c4c; /* Cor do fundo */
+    border-radius: 10px;/* Deixa a borda redonda */
+    padding: 20px; /* Alinha o texto no quadrado */
+    flex: 1; /* Permite que os quadrados se ajustem igualmente */
+    margin-right: 20px; /* Espaçamento entre os boxes */
+}
+
+.info-box h3 { /* Titulo da Box */
+    color: #fff;/* Cor do texto */
+    font-size: 18px; /* Tamanho do texto */
+    margin-bottom: 15px; /* Distancia entre o titulo e o texto da box */
+}
+
+.info-box p, /* Escurece o texto das boxes */
+.info-box ul { /* Escurece o texto da box 3 (pois é uma lista) */
+    color: #ddd; /* Cor do texto das 3 boxes */
+}
+
+.info-box ul {
+    list-style: disc; /* Tipo de listagem da box 3 */
+    padding-left: 20px; /* Distanciamento da esquerda */
+}
+/* Fim da Página de Sobre */
